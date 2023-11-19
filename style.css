@@ -67,7 +67,7 @@ input::-webkit-inner-spin-button{
     height: 50px;
     width: 180px;
     border: none;
-    background-color: #CA558C;
+    background-color: rgb(72, 49, 206);
     border-radius: 25px;
     color: #fff;
     font-size: 24px;
@@ -76,17 +76,40 @@ input::-webkit-inner-spin-button{
 }
 
 #cal-btn:hover{
-    background-color: #c9216f;
+    background-color: rgb(24, 8, 114);
 }
 
 #cal-btn:active{
     scale: 0.95;
-    background-color: #CA558C;
+    background-color: rgb(72, 49, 206);
 }
 
-/* #result{
-    visibility: hidden;
-} */
+#reset-btn{
+    height: 50px;
+    width: 180px;
+    border: none;
+    height: 50px;
+    width: 180px;
+    border: none;
+    background-color: #7a7a7a;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.15s;
+    margin-bottom: -50px;
+}
+
+#reset-btn:hover{
+    background-color: #383838;
+}
+
+#reset-btn:active{
+    scale: 0.95;
+    background-color: #7a7a7a;
+}
+
+
+
 
 .result p {
     font-size: 20px;
