@@ -29,20 +29,22 @@ body{
     height: 100%;
 }
 
-.input-wrapper{
-    height: 50%;
-}
-
 .input-wrapper div{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
 .input-wrapper div label{
     color: #000;
     font-size: 14px;
     margin-top: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
+    opacity: 0.6;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
 
 .input-wrapper div input{
@@ -54,17 +56,19 @@ body{
     border: none;
     background-color: transparent;
     border-bottom: 1px solid gray;
+
 }
 
 #calculate{
-    height: 40px;
-    width: 150px;
+    height: 50px;
+    width: 180px;
     border: none;
     background-color: #CA558C;
-    border-radius: 20px;
+    border-radius: 25px;
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
     transition: all 0.15s;
+    margin-bottom: -50px;
 }
 
 #calculate:hover{
@@ -76,4 +80,8 @@ body{
     background-color: #CA558C;
 }
 
+
+#bmi-result{
+    font-size: 20px;
+}
 
