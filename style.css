@@ -21,6 +21,10 @@ body{
     padding: 20px;
 }
 
+#title{
+    color: #464646;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -59,7 +63,7 @@ input::-webkit-inner-spin-button{
 
 }
 
-#calculate{
+#cal-btn{
     height: 50px;
     width: 180px;
     border: none;
@@ -71,17 +75,20 @@ input::-webkit-inner-spin-button{
     margin-bottom: -50px;
 }
 
-#calculate:hover{
+#cal-btn:hover{
     background-color: #c9216f;
 }
 
-#calculate:active{
+#cal-btn:active{
     scale: 0.95;
     background-color: #CA558C;
 }
 
+/* #result{
+    visibility: hidden;
+} */
 
-#bmi-result{
+.result p {
     font-size: 20px;
 }
 

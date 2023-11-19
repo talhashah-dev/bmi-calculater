@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/10476/10476452.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/fitness-8/512/fitness-color-16-512.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="container">
         <div class="wrapper">
-            <h1>BMI Calculator</h1>
+            <h1 id="title">BMI Calculator</h1>
 
             <div class="input-wrapper">
                 <div>
-                    <label for="height">height</label>
-                    <input type="number" id="height" placeholder="Enter your height" autofocus>
+                    <label for="height-input">height (m)</label>
+                    <input type="number" id="height-input" placeholder="Enter your height" autofocus>
                 </div>
                 <br>
                 <div>
-                    <label for="weight">weight</label>
-                    <input type="number" id="weight" placeholder="Enter your weight"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3">
+                    <label for="weight-input">weight (kg)</label>
+                    <input type="number" id="weight-input" placeholder="Enter your weight">
                 </div>
             </div>
 
-            <button id="calculate">Calculate</button>
+            <button id="cal-btn" onclick="calculate()">Calculate</button>
 
-            <div class="result">
-                <p id="bmi-result">Your BMI is <span></span></p>
+            <div>
+                <p  id="result">Press Calculate Button for Result!</p>
             </div>
         </div>
     </div>
